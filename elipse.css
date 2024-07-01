@@ -1,0 +1,19 @@
+.clip-path {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: yellow;
+  /* clip-path: ellipse(40% 50% at left); */
+  /* clip-path: ellipse(closest-side farthest-side at 30% 50%); */
+  clip-path: ellipse(farthest-side farthest-side at 80%);
+}
+
+.gradient {
+  /* background: radial-gradient(ellipse 50% 30% at center, purple, orange); */
+  /* background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c); */
+  background: radial-gradient(farthest-side, #3f87a6, #ebf8e1, #f69d3c);
+  /* background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); */
+  width: 300px;
+  height: 300px;
+}
+

@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calendar_month {
+  text-align: center;
+  padding: 20px 0 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.calendar_month::after {
+  content: '\25BC';
+  display: inline-block;
+  color: rgb(84, 71, 71);
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.calendar_year {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.calendar_weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 15px;
+  border-top: 0.75px solid gray;
+  border-bottom: 0.75px solid gray;
+}
+
+.calendar_weekdays div {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-left: 0.75px solid gray;
+  border-right: 0.75px solid gray;
+}
+
+.calendar_dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar_dates .past-month {
+  color: lightgrey;
+}
+
+.date {
+  text-align: end;
+  padding: 40px;
+  color: gray;
+  border: 0.75px solid gray;
+}
+
+.calendar_event-first {
+  grid-area: 2/4/3/7;
+  background-color: peachpuff;
+  border-left: 5px solid rgb(255, 102, 0);
+  color: rgb(255, 102, 0);
+  z-index: 1;
+  height: 20px;
+  margin: 10px 2px 0 2px;
+  padding: 3px 10px;
+}
+
+.calendar_event-second {
+  grid-area: 2 / 2 / 3 / 5;
+  background-color: pink;
+  border-left: 5px solid rgb(233, 24, 90);
+  color: rgb(233, 24, 90);
+  height: 20px;
+  margin: 70px 2px 0 2px;
+  padding: 3px 10px;
+}
+
+.calendar_event-third {
+  grid-area: 3 / 3 / 4 / 6;
+  background-color: rgb(17, 8, 88);
+  color: white;
+  height: 20px;
+  margin: 70px 2px 0 2px;
+  padding: 3px 10px;
+}
+
+.calendar_event-fourth {
+  grid-area: 4 / 5 / 5 / 8;
+  background-color: lightblue;
+  border-left: 5px solid rgb(0, 128, 255);
+  color: rgb(0, 128, 255);
+  height: 20px;
+  margin: 70px 2px 0 2px;
+  padding: 3px 10px;
+}
+
+.overlap-4 {
+  grid-area: 2/2/3/3;
+}
+
+.overlap-5 {
+  grid-area: 2/3/3/4;
+}
+
+.overlap-6 {
+  grid-area: 2/4/3/5;
+}
+
+.overlap-7 {
+  grid-area: 2/5/3/6;
+}
+
+.overlap-8 {
+  grid-area: 2/6/3/7;
+}
+
+.overlap-12 {
+  grid-area: 3/3/4/4;
+}
+
+.overlap-13 {
+  grid-area: 3/4/4/5;
+}
+
+.overlap-14 {
+  grid-area: 3/5/4/6;
+}
+
+.overlap-21 {
+  grid-area: 4/5/5/6;
+}
+
+.overlap-22 {
+  grid-area: 4/6/5/7;
+}
+
+.overlap-23 {
+  grid-area: 4/7/5/8;
+}
